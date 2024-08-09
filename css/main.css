@@ -195,7 +195,7 @@ nav #navigation {
     position: absolute;
     left: -21rem;
     right: 0;
-    bottom: -59rem;
+    bottom: -60rem;
     width: 5%; /* Adjust this to change the width of the border */
     margin: auto;
     border-bottom: 0.4rem solid #da0f0f;
