@@ -198,7 +198,7 @@ nav #navigation {
     bottom: -59rem;
     width: 5%; /* Adjust this to change the width of the border */
     margin: auto;
-    border-bottom: 0.4rem solid #031a60;
+    border-bottom: 0.4rem solid #da0f0f;
 }
 
 
@@ -263,7 +263,7 @@ nav #navigation {
 }
 
 #container #featured #read-more button {
-    background-color: #031a60;
+    background-color: #da0f0f;
     border: none;
     padding: 1rem 2rem;
     border-radius: 2rem;
