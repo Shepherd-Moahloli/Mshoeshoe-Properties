@@ -1,0 +1,289 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    height: 5rem ;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    position: fixed;
+    z-index: 10000;
+    
+}
+
+nav img {
+    width: 100px;
+    padding: 0 4rem;
+}
+
+
+nav  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+    
+}
+.nav-list li {
+    position: relative;
+    padding-bottom: 5px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+.nav-list li:hover {
+    color: #da0f0f;
+    font-weight: bolder;
+}
+
+.nav-list li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    background-color: #da0f0f; /* Change to match your design */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+.nav-list li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+nav #navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+#slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh /* adjust as needed */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
+}
+
+.slide:first-child {
+    transform: translateX(0);
+}
+
+
+
+
+#container #featured {
+    text-align: center;
+    margin: o auto;
+    padding: 1rem 0;
+}
+
+#container .featured-title, #container .featured-nthabi {
+    font-size: 2rem;
+   
+}
+
+
+#container #featured .featured-title{
+    position: relative;
+    display: inline-block;
+}
+
+#container #featured .featured-title::after {
+    content: '';
+    position: absolute;
+    left: 0rem;
+    right: 0;
+    top: 3.5rem;
+    bottom: 0;
+    width: 50%; /* Adjust this to change the width of the border */
+    margin: auto;
+    border-bottom: 0.4rem solid #da0f0f;
+}
+
+#container #featured #featured-houses {
+    height: 60rem;
+}
+
+#container #featured #featured-houses ul{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 70%;
+    padding: 7rem 0;
+    margin: 0 auto;
+    list-style: none;
+    overflow: hidden;
+    
+}
+
+#container #featured #featured-houses ul li {
+   padding: 1rem;
+}
+
+#container #featured #featured-houses ul li div {
+    width: 100%; /* adjust as needed */
+    height: 400px; /* adjust as needed */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#container #featured #featured-content {
+    font-size: 1rem;
+    font-weight: light;
+    text-align: start;
+    text-align: justify; 
+}
+
+#container #featured #featured-content .featured-text {
+    color: #989898;
+}
+
+#container #nthabiseng {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+#container #nthabiseng #nthabiseng-image {
+    width: 70%;
+    height: 15rem;
+    margin: 0 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+#container #nthabiseng #nthabiseng-content{
+    width: 90%;
+    padding: 0 3rem;
+    text-align: start;
+    line-height: 1.5;
+}
+
+.featured-nthabi {
+    margin: 0;
+}
+
+.featured-nthabi::after {
+    content: '';
+    position: absolute;
+    left: -21rem;
+    right: 0;
+    bottom: -59rem;
+    width: 5%; /* Adjust this to change the width of the border */
+    margin: auto;
+    border-bottom: 0.4rem solid #031a60;
+}
+
+
+#container #nthabiseng #nthabiseng-content .ntabi-text {
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #989898;
+}
+
+
+
+#container #featured #featured-houses ul li #view{
+    height: 2rem;
+    display: flex;
+    justify-content: end;
+    transition: color 0.1s ease-in-out;
+    cursor: pointer;
+    
+}
+
+#container #featured #featured-houses ul li #view img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 1rem 0.2rem ;
+}
+
+#container #featured #featured-houses ul li #view:hover {
+    color: #da0f0f;
+}
+
+#container #featured #contact-icons #call-nthabi, #container #featured #contact-icons #call-nthabi-2 {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #989898;
+    
+}
+
+#container #featured #contact-icons #call-nthabi-2 {
+    width: 75%;
+}
+
+
+#container #featured #contact-icons #call-nthabi img, #container #featured #contact-icons #call-nthabi-2 img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1.8rem 0rem ;
+    display: flex;
+    opacity: 0.5;
+}
+
+#container #featured #contact-icons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#container #featured #read-more {
+    display: flex;
+    
+}
+
+#container #featured #read-more button {
+    background-color: #031a60;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    margin: 2rem 0;
+}
+
+#container  footer {
+    background-color: #031a60;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 3rem 0 0 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+}
+
+
+
+
