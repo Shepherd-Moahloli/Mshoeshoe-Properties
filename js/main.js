@@ -46,4 +46,43 @@ document.querySelectorAll(".my-svg").forEach(function (img) {
   img.parentNode.addEventListener("mouseout", function () {
     img.src = "images/circle-right-regular.svg"; // path to the original SVG
   });
+
+  $(document).ready(function () {
+    var link = $("#house-img .overlay-text");
+    if (!link.length) {
+      console.log("The .overlay-text link does not exist");
+      return;
+    }
+
+    link.on("click", function (event) {
+      console.log("The .overlay-text link was clicked");
+      event.preventDefault();
+
+      var hash = event.target.hash;
+      if (!hash) {
+        console.log(
+          "The .overlay-text link does not have a valid href attribute"
+        );
+        return;
+      }
+
+      var target = $(hash);
+      if (!target.length) {
+        console.log("The target element does not exist");
+        return;
+      }
+
+      $("html, body").stop().animate(
+        {
+          scrollTop: target.offset().top,
+        },
+        2000,
+        "easeInOutExpo"
+      );
+
+      $(window).on("wheel", function () {
+        $("html, body").stop();
+      });
+    });
+  });
 });

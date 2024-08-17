@@ -301,6 +301,10 @@ nav #navigation {
     background-color: rgba(255, 0, 0, 0.9);
   }
 
+  #page-wrapper {
+    transition: transform 3s ease-in-out;
+  }
+
 #container  footer {
     background-color: #031a60;
     color: #fff;
